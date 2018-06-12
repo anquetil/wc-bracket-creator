@@ -4,4 +4,4 @@ I built this single page app to learn React (using [create-react-app](github.com
 
 Feedback? E-mail me at anquetil@usc.edu.
 
-More at [anquetil.xyz](anquetil.xyz).
+More at [anquetil.xyz](anquetil.xyz)!
