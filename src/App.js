@@ -220,8 +220,8 @@ export default class App extends Component {
 			        	<button className="copyButton">Copy to clipboard</button>
 			        </CopyToClipboard>
 					
-					<span><i> Or screenshot your bracket!</i></span>
-					<div style={{padding: '0 0 1rem 2rem', color: 'green'}}><i>{this.state.copied}</i></div>
+					<div style={{padding: '0 0 1rem 2rem'}}><i> Or screenshot your bracket!</i></div>
+					<div style={{padding: '0 0.5rem 1rem 2rem', color: 'green'}}><i>{this.state.copied}</i></div>
 
 					<p className="desc" >
 						

@@ -59,6 +59,7 @@
 		position: relative; /*keep - messes up clicking otherwise */
 		font-size: .9rem;
 		margin: 2px auto;
+		z-index: 0;
 	}
 
 
