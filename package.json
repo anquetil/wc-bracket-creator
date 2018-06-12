@@ -1,0 +1,30 @@
+{
+  "name": "wc-bracket-creator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "bootstrap": "^4.1.1",
+    "emoji-dictionary": "^1.0.9",
+    "gh-pages": "^1.2.0",
+    "immutability-helper": "^2.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "react": "^16.4.0",
+    "react-columns": "^1.2.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.4.0",
+    "react-modal": "^3.4.5",
+    "react-scripts": "1.1.4",
+    "react-transition-group": "^2.3.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "anquetil.github.io/wc-bracket-creator"
+}

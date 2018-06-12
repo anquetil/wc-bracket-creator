@@ -1,0 +1,199 @@
+/*things that don't change with size*/
+
+
+html {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+button {
+	font-size: 1rem;
+	cursor: pointer;
+	color: white;
+	background-color: #157efb;
+	border: 1px solid #157efb;
+	padding: .5rem .75rem; 
+	text-align: center;
+	border-radius: .4rem;
+
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	outline: none;
+    background-color: white;
+	color: #157efb;
+
+}
+
+.exportButton {
+	z-index: 0;
+
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, .2);
+}
+
+.copyButton {
+	display: inline-block;
+	margin-bottom: 1rem;
+	margin: 0rem 1rem 1rem 2rem;
+}
+
+.groupColumns {
+	background-color: #f8f8f8;
+
+
+	-webkit-transition:  .6s;
+	-moz-transition:  .6s;
+	-o-transition:  .6s;
+	transition:  .6s;
+}
+
+.group {
+	border-radius: 2%;
+}
+
+.groupCountryBox {
+	border-bottom: .5px solid #dadada;
+	background-color: white;
+}
+
+.groupCountryBox .check {
+	cursor: pointer;
+	text-align: center;
+	border-radius: 50%;
+
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.check[status='off'] {
+	background-color: white;
+	color: #5492f7;
+	border: 1.2px solid #5492f7;
+}
+
+.check[status='on'] {
+	background-color: #5492f7;
+	color: white;
+	border: 1.2px solid #5492f7;
+}
+
+/*MODAL*/
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+		width: 50%;
+		min-width: 300px;
+
+		outline: 0;
+		border: 1px solid #aaa;
+		border-radius: 5px;
+		background-color: #f9f9f9;
+		height: 50%;
+	}
+	.modal h2 {
+		margin: 0;
+		padding: 1rem 2rem;
+	}
+
+	.modal .desc {
+		font-family: "Courier New", Courier, monospace;
+		white-space: pre-wrap;
+		margin: 0;
+		padding: 1rem 0 1rem 2rem;
+		background-color: white;
+		line-height: 1.5;
+		height: 100%;
+		overflow-y: scroll;
+
+		-moz-user-select: text;
+		-webkit-user-select: text;
+		-ms-user-select: text;
+		user-select: text;
+	}
+
+
+
+.bracketCountryBox .check {
+	display: inline-block;
+
+
+	width: 15px;
+	height: 15px;
+	font-size: .8rem;
+
+
+	line-height: 15px;
+
+	margin: 0px 3px;
+}
+
+.groupColumns h3 {
+	margin: 5px 0;
+	text-align: center;
+}
+
+.bracket h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+
+
+/*Bracket Styling*/
+
+	.col h4{
+		margin: 15px 0px -15px 0px;
+	}
+
+	.bracketCountryBox {
+		white-space: nowrap;
+		overflow: hidden;
+
+		border-bottom: .5px solid #dadada;
+		background-color: white;
+	}
+
+
+	.bracketCountryBox .check {
+		cursor: pointer;
+		text-align: center;
+		border-radius: 50%;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+	}
+
+	.winner {
+		z-index: -1;
+		box-shadow: 1px 0px 10px 3px rgba(0, 0, 0, .2);
+	}
+
+
+
