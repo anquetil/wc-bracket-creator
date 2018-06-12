@@ -26,5 +26,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "anquetil.github.io/wc-bracket-creator"
+  "homepage": "http://anquetil.xyz/wc-bracket-creator"
 }

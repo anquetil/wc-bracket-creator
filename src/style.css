@@ -42,9 +42,9 @@ button:active {
 }
 
 .exportButton {
-	z-index: 0;
+	z-index: 15;
 
-	position: absolute;
+	position: fixed;
 	top: 1rem;
 	right: 1rem;
 
