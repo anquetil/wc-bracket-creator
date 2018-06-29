@@ -23,6 +23,31 @@ export default class App extends Component {
 			copied: '',
 		};
 
+		this.handleGroupPosition('A', 'Uruguay', '1');
+		this.handleGroupPosition('A', 'Russia', '2');
+
+		this.handleGroupPosition('B', 'Spain', '1');
+		this.handleGroupPosition('B', 'Portugal', '2');
+
+		this.handleGroupPosition('C', 'France', '1');
+		this.handleGroupPosition('C', 'Denmark', '2');
+
+		this.handleGroupPosition('D', 'Croatia', '1');
+		this.handleGroupPosition('D', 'Argentina', '2');
+
+
+		this.handleGroupPosition('E', 'Brazil', '1');
+		this.handleGroupPosition('E', 'Switzerland', '2');
+
+		this.handleGroupPosition('F', 'Sweden', '1');
+		this.handleGroupPosition('F', 'Mexico', '2');
+
+		this.handleGroupPosition('G', 'Belgium', '1');
+		this.handleGroupPosition('G', 'England', '2');
+
+		this.handleGroupPosition('H', 'Colombia', '1');
+		this.handleGroupPosition('H', 'Japan', '2');
+
 	}
 
 	openModal() {
@@ -137,13 +162,13 @@ export default class App extends Component {
 
 
 
-		var s = 'Group Picks';
+		/*var s = 'Group Picks';
 		for(var l = 0 ; l < 16; l+= 2){
 			s += '\n' + storedSeeds[l] + '  ' + storedSeeds[l + 1];
-		}
+		}*/
 
 
-		/*UGLY CODE - USED FOR EXPORTING BRACKET */
+		/*UGLY CODE - USED FOR EXPORTING BRACKET 
 			s += '\n\nBracket Picks\nR16 \t\t QF \t SF \t F \t Winner\n';
 			s += '\n' + storedSeeds[0];
 			s += '\n\t\t' + w[0];
@@ -182,6 +207,29 @@ export default class App extends Component {
 			s += '\n' + storedSeeds[13];
 			s += '\n\t\t' + w[7];
 			s += '\n' + storedSeeds[14];
+		*/
+
+
+		var s = 'Bracket Results';
+		s += '\nQF';
+		s += '\n' + w[0];
+		s += '\n' + w[1];
+		s += '\n' + w[2];
+		s += '\n' + w[3];
+		s += '\n' + w[4];
+		s += '\n' + w[5];
+		s += '\n' + w[6];
+		s += '\n' + w[7];
+		s += '\nSF';
+		s += '\n' + w[8];
+		s += '\n' + w[9];
+		s += '\n' + w[10];
+		s += '\n' + w[11];
+		s += '\nF';
+		s += '\n' + w[12];
+		s += '\n' + w[13];
+		s += '\nWinner';
+		s += '\n' + w[14];
 
 
 		return s;
@@ -231,7 +279,7 @@ export default class App extends Component {
 				</Modal>
 
 
-				<button onClick={this.openModal.bind(this)} className="exportButton">Share</button>
+				<button onClick={this.openModal.bind(this)} className="exportButton">Export Results</button>
 				<div className="groupColumns">
 					<h3>Group Stage</h3>
 					{groupDisplay}

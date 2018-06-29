@@ -14,7 +14,7 @@ export default class Group extends Component {
 						key={num} 
 						groupCountry={true}
 						country={country} 
-						handleGroupPosition={this.handleGroupPosition.bind(this)}/>));
+						/*handleGroupPosition={this.handleGroupPosition.bind(this)}*//>));
 
 
 		return(

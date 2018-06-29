@@ -22,8 +22,8 @@ export default class Country extends Component {
 					<div className="countryName">{country.flag} {country.name}</div>
 
 					<div className="checksDiv">
-						<div className="check" status={stat1} onClick={() => (this.props.handleGroupPosition(country.name, '1'))}>1</div>
-						<div className="check" status={stat2} onClick={() => (this.props.handleGroupPosition(country.name, '2'))}>2</div>
+						<div className="check" status={stat1} /*onClick={() => (this.props.handleGroupPosition(country.name, '1'))}*/>1</div>
+						<div className="check" status={stat2} /*onClick={() => (this.props.handleGroupPosition(country.name, '2'))}*/>2</div>
 					</div>
 					
 				</div>

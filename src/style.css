@@ -78,6 +78,7 @@ button:active {
 
 .groupCountryBox .check {
 	cursor: pointer;
+	cursor: default !important;
 	text-align: center;
 	border-radius: 50%;
 
